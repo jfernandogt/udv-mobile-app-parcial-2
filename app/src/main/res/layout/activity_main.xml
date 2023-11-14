@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresa tus datos:"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Nombres" />
+
+            <EditText
+                android:id="@+id/apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Apellidos" />
+
+            <EditText
+                android:id="@+id/edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:inputType="number"
+                android:hint="Edad" />
+
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:inputType="textEmailAddress"
+                android:hint="correo" />
+
+            <EditText
+                android:id="@+id/salario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:inputType="number"
+                android:hint="Salario" />
+
+
+
+            <Button
+                android:id="@+id/calcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Calcular" />
+
+            <TextView
+                android:id="@+id/nombres_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                tools:text="Nombres: Juan Fernando"/>
+
+            <TextView
+                android:id="@+id/apellidos_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                tools:text="Apellidos: Barrios Barrera"/>
+
+            <TextView
+                android:id="@+id/edad_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                tools:text="Edad: 32"/>
+
+            <TextView
+                android:id="@+id/correo_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                tools:text="Correo: me@jfbarrios.com"/>
+
+            <TextView
+                android:id="@+id/sueldo_sin_deducciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                tools:text="Sueldo sin deducciones: Q35000.00"/>
+
+            <TextView
+                android:id="@+id/sueldo_con_deducciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                tools:text="Sueldo con deducciones: Q35000.00"/>
+
+            <TextView
+                android:id="@+id/igss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                tools:text="IGSS: Q3000.00"/>
+
+            <TextView
+                android:id="@+id/isr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                tools:text="ISR: Q3000.00"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
